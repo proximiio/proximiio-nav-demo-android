@@ -1,0 +1,57 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="@string/preference_route"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="preference_accessible_routes"
+            android:title="@string/preference_route_accessible"
+            app:iconSpaceReserved="false" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="preference_stairs"
+            android:title="@string/preference_route_stairs"
+            app:iconSpaceReserved="false" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="preference_elevators"
+            android:title="@string/preference_route_elevator"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/preference_guidance"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="preference_voice_guidance"
+            android:title="@string/preference_guidance_voice"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/preference_vibration"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="preference_vibration"
+            android:title="@string/preference_vibration_enabled"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:iconSpaceReserved="false">
+        <Preference
+            android:title="@string/preference_privacy_policy"
+            app:iconSpaceReserved="false"
+            app:key="policy" />
+<!--        <Preference-->
+<!--            android:title="@string/preference_about"-->
+<!--            app:iconSpaceReserved="false"-->
+<!--            app:key="about" />-->
+    </PreferenceCategory>
+
+</PreferenceScreen>

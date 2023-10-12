@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blueLight">#007CBA</color>
+    <color name="blueLightTransparent">#0021b4fa</color>
+    <color name="blueDark">#004B8A</color>
+    <color name="pink">#DB62B2</color>
+    <color name="blueLight2">#4F86C3</color>
+    <color name="greenLight">#9EEE92</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="grayLight">#cccccc</color>
+    <color name="grayDark">#666</color>
+    <color name="red">#ED246C</color>
+
+    <color name="accent">@color/blueLight</color>
+    <color name="primary">#FFFFFFFF</color>
+
+    <color name="exploreNearbyBathroom">#005A87</color>
+    <color name="exploreNearbyCafe">#E2CE19</color>
+    <color name="exploreNearbyParking">#4F86C3</color>
+    <color name="exploreNearbyExits">#8C62B6</color>
+    <color name="exploreNearbyMeetingRoom">#71D9DE</color>
+    <color name="fabColor">@color/greenLight</color>
+    <color name="colorNotification">@color/blueDark</color>
+    <color name="colorCafeBackground">@color/pink</color>
+    <color name="searchItemDetailTextColor">#555</color>
+
+</resources>

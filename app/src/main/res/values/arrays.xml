@@ -1,0 +1,40 @@
+<resources>
+
+    <string-array name="floors">
+        <item>@string/floor_n1</item>
+        <item>@string/floor_0</item>
+        <item>@string/floor_1</item>
+        <item>@string/floor_2</item>
+        <item>@string/floor_3</item>
+        <item>@string/floor_4</item>
+        <item>@string/floor_5</item>
+        <item>@string/floor_6</item>
+        <item>@string/floor_7</item>
+        <item>@string/floor_8</item>
+        <item>@string/floor_9</item>
+        <item>@string/floor_10</item>
+        <item>@string/floor_11</item>
+        <item>@string/floor_12</item>
+        <item>@string/floor_13</item>
+    </string-array>
+
+    <integer-array name="floors_levels">
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </integer-array>
+
+</resources>

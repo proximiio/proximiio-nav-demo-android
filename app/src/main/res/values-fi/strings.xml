@@ -1,0 +1,187 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="menu_settings">Asetukset</string>
+    <string name="menu_close">Sulje</string>
+
+    <!-- Home -->
+    <string name="explore_nearby">Lähialueella</string>
+    <string name="explore_nearby_bathrooms">WC-tilat</string>
+    <string name="explore_nearby_cafes">Kahvilat</string>
+    <string name="explore_nearby_parking">Parkkipaikat</string>
+    <string name="explore_nearby_exits">Uloskäynnit</string>
+    <string name="explore_nearby_meeting_rooms">Neuvottelutilat</string>
+
+    <string name="resource_working_spaces">Työtilat</string>
+    <string name="resource_phone_booths">Puhelinkopit</string>
+    <string name="resource_toilets">WC-tilat</string>
+    <string name="resource_availability">%d / %d vapaana</string>
+    <string name="resource_availability_loading">Ladataan saatavuustietoja…</string>
+    <string name="resource_availability_error">Tilatiedon lataus epäonnistui</string>
+
+
+    <!-- Search -->
+    <string name="wrong_location">Olet paikannusalueen ulkopuolella.</string>
+
+
+    <!-- Search -->
+    <string name="search_hint">Haku</string>
+    <string name="search_no_results_title">Ei tuloksia</string>
+    <string name="search_no_results_description">Käytä laajempaa hakusanaa tai\nselaa vapaana olevia resursseja.</string>
+
+    <string name="back_to_home">Takaisin</string>
+    <string name="navigate">Navigoi</string>
+    <string name="info">Tietoa</string>
+    <string name="recommended_for_you">Suosittelemme</string>
+
+    <string name="resource_type_search_bar_1">Vapaana olevat neuvottelutilat</string>
+    <string name="resource_type_search_bar_2">Vapaana olevat työtilat</string>
+    <string name="resource_type_search_bar_3">Vapaan olevat puhelinkopit</string>
+    <string name="resource_type_search_bar_4">Vapaana olevat WC-tilat</string>
+    <plurals name="item_count">
+        <item quantity="one">%d hakutulosta</item>
+        <item quantity="other">%d hakutulosta</item>
+    </plurals>
+
+    <!-- Poi Fragment -->
+    <string name="amenities">Varustelut</string>
+    <string name="amenities_ac">Ilmastointi</string>
+    <string name="amenities_tv">TV</string>
+    <string name="amenities_wifi">WiFi</string>
+    <string name="amenities_plug">Sähkö</string>
+
+    <string name="availability_available">Vapaana</string>
+    <string name="availability_unavailable">Varattu</string>
+    <plurals name="capacity">
+        <item quantity="one">%d henkilö</item>
+        <item quantity="other">%d henkilöä</item>
+    </plurals>
+    <string name="air_quality_0">Hyvä ilmanlaatu</string>
+    <string name="air_quality_1">Tyydyttävä ilmanlaatu</string>
+    <string name="air_quality_2">Heikko ilmanlaatu</string>
+    <string-array name="air_quality">
+        <item>@string/air_quality_0</item>
+        <item>@string/air_quality_1</item>
+        <item>@string/air_quality_2</item>
+    </string-array>
+    <string name="sound_level_0">Hiljaista</string>
+    <string name="sound_level_1">Hieman melua</string>
+    <string name="sound_level_2">Kovaa melua</string>
+    <string-array name="sound_level">
+        <item>@string/sound_level_0</item>
+        <item>@string/sound_level_1</item>
+        <item>@string/sound_level_2</item>
+    </string-array>
+    <string name="estimate_not_available">Arvion laskeminen epäonnistui</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_description">[Kuvausta ei saatavilla]</string>
+
+    <!-- Map -->
+    <string name="outside_map">Olet kartan ulkopuolella</string>
+    <string name="click_map_marker">Paina merkkiä saadaksesi lisätietoja</string>
+    <string name="floor_n1">-1 kerros</string>
+    <string name="floor_0">1 kerros</string>
+    <string name="floor_1">2 kerros</string>
+    <string name="floor_2">3 kerros</string>
+    <string name="floor_3">4 kerros</string>
+    <string name="floor_4">5 kerros</string>
+    <string name="floor_5">6 kerros</string>
+    <string name="floor_6">7 kerros</string>
+    <string name="floor_7">8 kerros</string>
+    <string name="floor_8">9 kerros</string>
+    <string name="floor_9">10 kerros</string>
+    <string name="floor_10">11 kerros</string>
+    <string name="floor_11">12 kerros</string>
+    <string name="floor_12">13 kerros</string>
+    <string name="floor_13">14 kerros</string>
+
+
+    <!-- Preferences -->
+    <string name="preference_route">Reititysasetukset</string>
+    <string name="preference_route_accessible">Käytä saavutettavia reittejä</string>
+    <string name="preference_route_stairs">Voin käyttää portaita</string>
+    <string name="preference_route_elevator">Voin käyttää hissejä</string>
+    <string name="preference_guidance">Opastusasetukset</string>
+    <string name="preference_guidance_voice">Käytä ääniopastusta</string>
+    <string name="preference_vibration">Vibraatio</string>
+    <string name="preference_vibration_enabled">Käytä vibraatiota</string>
+    <string name="preference_privacy_policy">Yksityisyysseloste</string>
+    <string name="preference_about">Tietoa</string>
+
+    <!-- Preview -->
+    <string name="calculating_route">Lasketaan…</string>
+    <plurals name="minutes">
+        <item quantity="one">%d minuutti</item>
+        <item quantity="other">%d minuuttia</item>
+    </plurals>
+    <plurals name="meters">
+        <item quantity="one">%d metri</item>
+        <item quantity="other">%d metriä</item>
+    </plurals>
+    <string name="preview_estimate">%s (%s)</string>
+    <string name="preview_parking_button">Lähin parkkipaikka reitillä</string>
+    <string name="preview_parking_remove_button">Poista parkkipaikka</string>
+    <string name="preview_show_steps">Näytä reitti</string>
+    <string name="preview_hide_steps">Piilota reitti</string>
+    <string name="waypoint">Välietappi</string>
+    <string name="route_preview_turn_start">Aloita navigointi</string>
+    <string name="route_preview_turn_left_hard">Käänny jyrkästi vasempaan</string>
+    <string name="route_preview_turn_left">Käänny vasempaan</string>
+    <string name="route_preview_turn_left_slight">Käänny loivasti vasemmalle</string>
+    <string name="route_preview_turn_straight">Jatka suoraan</string>
+    <string name="route_preview_turn_right_slight">Käänny loivasti oikealle</string>
+    <string name="route_preview_turn_right">Käänny oikealle</string>
+    <string name="route_preview_turn_right_hard">Käänny jyrkästi oikealle</string>
+    <string name="route_preview_turn_around">Käänny ympäri</string>
+    <string name="route_preview_up_elevator">Käytä hissiä siirtyäksesi ylöspäin</string>
+    <string name="route_preview_up_escalator">Käytä liukuportaita sirtyäksesi ylöspäin</string>
+    <string name="route_preview_up_stairs">Käytä portaita siirtyäksesi ylöspäin</string>
+    <string name="route_preview_down_elevator">Käytä hissiä siirtyäksesi alaspäin</string>
+    <string name="route_preview_down_escalator">Käytä liukuportaita siirtyäksesi alaspäin</string>
+    <string name="route_preview_down_stairs">Käytä portaita siirtyäksesi alaspäin</string>
+    <string name="route_preview_finish">Saavut kohteeseen</string>
+    <string name="route_preview_read_more">Lue lisää</string>
+    <string name="route_preview_show_less">Näytä vähemmän</string>
+
+
+    <!-- Navigation -->
+    <string name="light_along_path">Reitillä olevat valaisimet ovat sinisen värisiä</string>
+    <string name="calculating_steps">Lasketaan askelia…</string>
+    <plurals name="navigation_distance">
+        <item quantity="one">%d metri</item>
+        <item quantity="other">%d metriä</item>
+    </plurals>
+
+    <!-- Privacy policy notification -->
+    <string name="privacy_policy_required">Hyväksy yksityisyysseloste jatkaaksesi</string>
+    <string name="next">Jatka</string>
+
+    <!-- Privacy policy -->
+    <string name="privacy_policy">Yksityisyysseloste</string>
+    <string name="accept_privacy_policy">Hyväksy &amp; jatka</string>
+    <string name="decline_privacy_policy">Sulje</string>
+
+    <string name="privacy_policy_html">
+        <![CDATA[
+            <h2>Proximi.io Privacy</h2>
+        ]]>
+    </string>
+    <string name="privacy_policy_visitor_id">Visitor ID: %s</string>
+
+    <!-- Navigation Notification -->
+    <string name="notification_navigation_channel_name">Navigoinnin notifikaatiokanava</string>
+    <string name="notification_navigation_channel_description">Navigoinnin kuvaus</string>
+    <string name="notification_stop">Lopeta</string>
+
+    <!-- POI Detail -->
+    <string name="fragment_poi_detail_directions_button">Näytä ohjeet</string>
+    <string name="fragment_poi_detail_faster_route">Nopein reitti</string>
+    <string name="fragment_poi_detail_my_trip">Aloita reitti</string>
+    <string name="fragment_poi_detail_trip">Reitti</string>
+    <string name="fragment_poi_detail_location_description">Paikan kuvaus</string>
+    <string name="fragment_poi_detail_calculating_steps">lasketaan askelia…</string>
+    <string name="fragment_poi_detail_calculating_steps_error">reitin arviointi epäonnistui</string>
+    <string name="fragment_poi_detail_link">Ulkoiset linkit</string>
+    <string name="fragment_poi_detail_no_images">Kuvia ei saatavilla</string>
+
+</resources>

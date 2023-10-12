@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Proximiio_Demo_Whitelabel.iml" filepath="$PROJECT_DIR$/.idea/modules/Proximiio_Demo_Whitelabel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Proximiio_Demo_Whitelabel.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Proximiio_Demo_Whitelabel.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Proximiio_Demo_Whitelabel.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Proximiio_Demo_Whitelabel.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Proximiio_Demo_Whitelabel.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Proximiio_Demo_Whitelabel.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Proximiio_Demo_Whitelabel.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Proximiio_Demo_Whitelabel.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/Proximiio_Demo_Whitelabel.core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/Proximiio_Demo_Whitelabel.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/Proximiio_Demo_Whitelabel.core.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/core/Proximiio_Demo_Whitelabel.core.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/Proximiio_Demo_Whitelabel.core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/core/Proximiio_Demo_Whitelabel.core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/Proximiio_Demo_Whitelabel.core.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/core/Proximiio_Demo_Whitelabel.core.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mapbox/Proximiio_Demo_Whitelabel.mapbox.iml" filepath="$PROJECT_DIR$/.idea/modules/mapbox/Proximiio_Demo_Whitelabel.mapbox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mapbox/Proximiio_Demo_Whitelabel.mapbox.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/mapbox/Proximiio_Demo_Whitelabel.mapbox.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mapbox/Proximiio_Demo_Whitelabel.mapbox.main.iml" filepath="$PROJECT_DIR$/.idea/modules/mapbox/Proximiio_Demo_Whitelabel.mapbox.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mapbox/Proximiio_Demo_Whitelabel.mapbox.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/mapbox/Proximiio_Demo_Whitelabel.mapbox.unitTest.iml" />
+    </modules>
+  </component>
+</project>

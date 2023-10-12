@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="search_item_detail_recycler_ratio" format="float" type="dimen">1.77778</item>
+    <item name="search_item_detail_recycler_image_ratio" format="float" type="dimen">1.77778</item>
+    <dimen name="po_search_fragment_icon_padding">12dp</dimen>
+</resources>

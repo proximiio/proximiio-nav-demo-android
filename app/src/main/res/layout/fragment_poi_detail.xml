@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.poidetail.PoiDetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:fillViewport="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/imageRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:clipToPadding="false"
+            app:layout_constraintDimensionRatio="@dimen/search_item_detail_recycler_ratio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/fragment_poi_detail_image_item" />
+
+        <TextView
+            android:id="@+id/featureNameBottomTextView"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageRecyclerView"
+            tools:text="Feature Name" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_poi_detail_background"
+            android:backgroundTint="@color/blueDark"
+            android:padding="6dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/featureNameBottomTextView"
+            app:layout_constraintTop_toBottomOf="@+id/featureNameBottomTextView"
+            app:srcCompat="@drawable/ic_location_pin"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/levelTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/searchItemDetailTextColor"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            tools:text="1st floor" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_poi_detail_background"
+            android:backgroundTint="@color/blueDark"
+            android:padding="2dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:srcCompat="@drawable/ic_steps"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_poi_detail_background"
+            android:backgroundTint="@color/blueDark"
+            android:padding="6dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:srcCompat="@drawable/ic_time"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_poi_detail_background"
+            android:backgroundTint="@color/blueDark"
+            android:padding="4dp"
+            android:src="@drawable/ic_link"
+            app:layout_constraintStart_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_poi_detail_background"
+            android:backgroundTint="@color/blueDark"
+            android:padding="6dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            app:srcCompat="@drawable/ic_trip"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/descriptionImageView"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_poi_detail_background"
+            android:backgroundTint="@color/blueDark"
+            android:padding="6dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/tripButton"
+            app:srcCompat="@drawable/ic_description"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/stepsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/fragment_poi_detail_calculating_steps"
+            android:textColor="@color/searchItemDetailTextColor"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/featureNameBottomTextView"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/openHoursTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/searchItemDetailTextColor"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+            app:layout_constraintEnd_toEndOf="@+id/featureNameBottomTextView"
+            app:layout_constraintStart_toEndOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="@+id/imageView7"
+            tools:text="Open 5:00 to 8:00" />
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/card_background"
+            android:backgroundTint="@color/greenLight"
+            android:padding="16dp"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionLabelTextView"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+            tools:visibility="visible" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/textView11"
+            style="@style/Widget.Proximiio.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/exploreNearbyMeetingRoom"
+            app:iconGravity="textStart"
+            app:layout_constraintEnd_toEndOf="@+id/tripButton"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tripButton"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8"
+            tools:text="Open link" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tripButton"
+            style="@style/Widget.Proximiio.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="52dp"
+            app:iconGravity=""
+            app:iconTint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:text="Start My Trip\ncalculating distance..." />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_poi_detail_trip"
+            android:textColor="@color/searchItemDetailTextColor"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="@+id/openHoursTextView"
+            app:layout_constraintStart_toStartOf="@+id/openHoursTextView"
+            app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/descriptionLabelTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_poi_detail_location_description"
+            android:textColor="@color/searchItemDetailTextColor"
+            app:layout_constraintBottom_toBottomOf="@+id/descriptionImageView"
+            app:layout_constraintEnd_toEndOf="@+id/textView6"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toTopOf="@+id/descriptionImageView" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_poi_detail_link"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+            app:layout_constraintEnd_toEndOf="@+id/featureNameBottomTextView"
+            app:layout_constraintStart_toStartOf="@+id/openHoursTextView"
+            app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/descriptionGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="descriptionImageView,descriptionLabelTextView,descriptionTextView" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/linkGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="imageView8,textView12,textView11" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/openingHoursGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="imageView7,openHoursTextView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

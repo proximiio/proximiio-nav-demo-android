@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+    <fade android:startDelay="2000" android:fadingMode="fade_out">
+        <targets>
+            <target android:targetId="@+id/searchLinearLayout" />
+            <target android:targetId="@+id/searchBackgroundLayout" />
+        </targets>
+    </fade>
+    <autoTransition>
+        <targets>
+            <target android:targetId="@+id/searchRecyclerView" />
+        </targets>
+    </autoTransition>
+</transitionSet>

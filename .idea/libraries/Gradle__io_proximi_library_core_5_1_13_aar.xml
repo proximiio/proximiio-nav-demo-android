@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.proximi.library:core:5.1.13@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3843499525829073dd0f5e8132f24082/transformed/jetified-core-5.1.13/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3843499525829073dd0f5e8132f24082/transformed/jetified-core-5.1.13/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.proximi.library/core/5.1.13/33e2be997b4d149413dad732ac1115112020d33d/core-5.1.13-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

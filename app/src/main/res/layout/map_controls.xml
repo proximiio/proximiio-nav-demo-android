@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/floorSelectionCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="?attr/floorSelectorBackgroundColor"
+        app:cardCornerRadius="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingTop="6sp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="6sp">
+
+            <TextView
+                android:id="@+id/currentFloorTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/colorOnPrimary"
+                tools:text="@string/floor_0" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4sp"
+                android:src="@drawable/ic_floor_spinner"
+                android:tint="?attr/colorOnPrimary" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/floorSwitchRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="12dp"
+        android:gravity="end"
+        android:requiresFadingEdge="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_max="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/floorSelectionCardView"
+        tools:listitem="@layout/map_controls_floor"
+        tools:visibility="visible" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/locationFab"
+        style="@style/Theme.Proximiio.FAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:src="@drawable/ic_current_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/compassFab"
+        app:tint="?attr/colorOnPrimary" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/compassFab"
+        style="@style/Theme.Proximiio.FAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:foregroundTint="@color/blueDark"
+        android:src="@drawable/ic_compass_disabled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/floorSwitchRecyclerView"
+        app:tint="?attr/colorOnPrimary" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/mapControlsGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="floorSelectionCardView,compassFab,locationFab" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

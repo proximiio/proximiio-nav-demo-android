@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/accent"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+    <TextView
+        android:id="@+id/recommendedResourceTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/recommendedResourceImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Room title" />
+
+    <TextView
+        android:id="@+id/recommendedResourceDistanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/recommendedResourceTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/recommendedResourceTitleTextView"
+        tools:text="4 minutes away" />
+
+    <ImageView
+        android:id="@+id/recommendedResourceImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/recommendedResourceNavigateButton"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/recommendedResourceTitleTextView"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <Button
+        android:id="@+id/recommendedResourceNavigateButton"
+        style="@style/Widget.Proximiio.Button.Outlined.Inverse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/navigate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/recommendedResourceInfoButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/recommendedResourceImageView"
+        app:layout_constraintStart_toStartOf="@+id/recommendedResourceDistanceTextView"
+        app:layout_constraintTop_toBottomOf="@+id/recommendedResourceDistanceTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/recommendedResourceInfoButton"
+        style="@style/Widget.Proximiio.Button.Outlined.Inverse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/info"
+        app:layout_constraintBottom_toBottomOf="@+id/recommendedResourceNavigateButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/recommendedResourceNavigateButton"
+        app:layout_constraintTop_toTopOf="@+id/recommendedResourceNavigateButton"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

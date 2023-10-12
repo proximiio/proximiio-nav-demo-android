@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.eclipsesource.j2v8:j2v8:6.2.1@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bbc128f244a4c0ff4b20eb8e54e10302/transformed/jetified-j2v8-6.2.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/bbc128f244a4c0ff4b20eb8e54e10302/transformed/jetified-j2v8-6.2.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

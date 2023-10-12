@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".ui.routepreview.RoutePreviewFragment">
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:id="@+id/cardView"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:layout_marginEnd="8dp"-->
+    <!--        android:layout_marginBottom="8dp"-->
+    <!--        android:animateLayoutChanges="true"-->
+    <!--        app:cardCornerRadius="16dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent">-->
+
+    <!--    </androidx.cardview.widget.CardView>-->
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/map_controls"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/constraintLayoutWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16sp"
+        android:background="@drawable/card_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textAppearance="@style/TextAppearance.Proximiio.Heading_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageRecyclerView"
+                tools:text="Bunker" />
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+                tools:text="Lunch cafeteria with cake" />
+
+            <Button
+                android:id="@+id/showRouteButton"
+                style="@style/Widget.Proximiio.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/grayLight"
+                android:text="@string/preview_show_steps"
+                android:textColor="@color/blueDark"
+                app:icon="@drawable/ic_route"
+                app:layout_constraintBottom_toBottomOf="@+id/descriptionTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/descriptionTextView"
+                app:layout_constraintTop_toBottomOf="@+id/navigateButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/navigateButton"
+                style="@style/Widget.Proximiio.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/navigate"
+                android:textColor="@color/blueDark"
+                app:backgroundTint="@color/greenLight"
+                app:icon="@drawable/ic_navigate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/stepsRecyclerView" />
+
+            <ProgressBar
+                android:id="@+id/calculatingProgressBar"
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/calculatingTextView"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/calculatingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/calculating_route"
+                app:layout_constraintBottom_toBottomOf="@+id/calculatingProgressBar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/calculatingProgressBar"
+                app:layout_constraintTop_toTopOf="@+id/calculatingProgressBar"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/distanceImageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:backgroundTint="@color/blueDark"
+                android:src="@drawable/ic_walking"
+                app:layout_constraintBottom_toBottomOf="@+id/distanceTextView"
+                app:layout_constraintDimensionRatio="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/distanceTextView" />
+
+            <TextView
+                android:id="@+id/distanceTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/blueDark"
+                app:layout_constraintEnd_toEndOf="@+id/titleTextView"
+                app:layout_constraintStart_toEndOf="@+id/distanceImageView"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionTextView"
+                tools:text="4 mins | 200 m" />
+
+            <ImageView
+                android:id="@+id/openHoursImageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/ic_time"
+                app:layout_constraintBottom_toBottomOf="@+id/openingHoursTextView"
+                app:layout_constraintDimensionRatio="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/openingHoursTextView"
+                app:tint="@color/blueDark" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/stepsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:fadingEdge="vertical"
+                android:fadingEdgeLength="12dp"
+                android:requiresFadingEdge="vertical"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toTopOf="@id/navigateButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_max="200dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/readMoreButton"
+                tools:listitem="@layout/fragment_route_preview_item_no_tint"
+                tools:visibility="visible" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/previewInfoGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:constraint_referenced_ids="parkingButton,navigateButton,showRouteButton,distanceImageView,distanceTextView,titleTextView"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp"
+                tools:visibility="visible" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/calculatingGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:constraint_referenced_ids="calculatingTextView,calculatingProgressBar"
+                tools:visibility="visible" />
+
+            <Button
+                android:id="@+id/readMoreButton"
+                style="@style/Widget.Proximiio.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/grayLight"
+                android:text="@string/route_preview_read_more"
+                android:textColor="@color/blueDark"
+                android:visibility="gone"
+                app:icon="@drawable/ic_read_more"
+                app:iconGravity="textStart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linkButton" />
+
+            <TextView
+                android:id="@+id/openingHoursTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/blueDark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/openHoursImageView"
+                app:layout_constraintTop_toBottomOf="@+id/distanceTextView"
+                tools:text="Opening hours" />
+
+            <Button
+                android:id="@+id/linkButton"
+                style="@style/Widget.Proximiio.Button.Flat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/pink"
+                app:icon="@drawable/ic_link"
+                app:iconGravity="textStart"
+                app:iconTint="@color/pink"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/openingHoursTextView"
+                tools:text="External link" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/readMoreGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="linkButton,openHoursImageView,openingHoursTextView,descriptionTextView,imageRecyclerView"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp"
+                tools:visibility="visible" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/openingHoursGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="openingHoursTextView,openHoursImageView"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/imageRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:clipToPadding="false"
+                app:layout_constraintDimensionRatio="@dimen/search_item_detail_recycler_ratio"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:listitem="@layout/fragment_poi_detail_image_item" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:src="@drawable/ic_close"
+        app:backgroundTint="@color/red"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayoutWrapper"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayoutWrapper"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayoutWrapper" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

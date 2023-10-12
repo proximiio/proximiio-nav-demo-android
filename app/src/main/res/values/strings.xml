@@ -1,0 +1,187 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_close">Close</string>
+    <string name="error_map_init">Error loading map data, please check your network connection.</string>
+    <string name="error_map_init_retry">Retry</string>
+
+    <!-- Home -->
+    <string name="explore_nearby">Explore nearby</string>
+    <string name="explore_nearby_bathrooms">Bathrooms</string>
+    <string name="explore_nearby_cafes">Cafes</string>
+    <string name="explore_nearby_parking">Parking</string>
+    <string name="explore_nearby_exits">Exits</string>
+    <string name="explore_nearby_meeting_rooms">Meeting Rooms</string>
+
+    <string name="resource_working_spaces">Working Spaces</string>
+    <string name="resource_phone_booths">Phone booths</string>
+    <string name="resource_toilets">Toilets</string>
+    <string name="resource_availability">%d of %d available</string>
+    <string name="resource_availability_loading">Loading availability...</string>
+    <string name="resource_availability_error">Unable to load occupancy</string>
+
+
+    <!-- Search -->
+    <string name="wrong_location">You are outside of the supported area.</string>
+
+
+    <!-- Search -->
+    <string name="search_hint">Search</string>
+    <string name="search_no_results_title">No results</string>
+    <string name="search_no_results_description">Try a less specific search or\nbrowse available rooms and items.</string>
+
+    <string name="back_to_home">Back to home</string>
+    <string name="navigate">Navigate</string>
+    <string name="info">Info</string>
+    <string name="recommended_for_you">Recommended for you</string>
+
+    <string name="resource_type_search_bar_1">Available meeting rooms</string>
+    <string name="resource_type_search_bar_2">Available working spaces</string>
+    <string name="resource_type_search_bar_3">Available phone booths</string>
+    <string name="resource_type_search_bar_4">Available toilets</string>
+    <plurals name="item_count">
+        <item quantity="one">%d result found</item>
+        <item quantity="other">%d results found</item>
+    </plurals>
+
+    <!-- Poi Fragment -->
+    <string name="amenities">Amenities</string>
+    <string name="amenities_ac">AC</string>
+    <string name="amenities_tv">TV</string>
+    <string name="amenities_wifi">WiFi</string>
+    <string name="amenities_plug">Plug</string>
+
+    <string name="availability_available">Available</string>
+    <string name="availability_unavailable">Unavailable</string>
+    <plurals name="capacity">
+        <item quantity="one">%d person</item>
+        <item quantity="other">%d people</item>
+    </plurals>
+    <string name="air_quality_0">Great air quality</string>
+    <string name="air_quality_1">Average air quality</string>
+    <string name="air_quality_2">Poor air quality</string>
+    <string-array name="air_quality">
+        <item>@string/air_quality_0</item>
+        <item>@string/air_quality_1</item>
+        <item>@string/air_quality_2</item>
+    </string-array>
+    <string name="sound_level_0">Quiet now</string>
+    <string name="sound_level_1">Slightly noisy now</string>
+    <string name="sound_level_2">Loud now</string>
+    <string-array name="sound_level">
+        <item>@string/sound_level_0</item>
+        <item>@string/sound_level_1</item>
+        <item>@string/sound_level_2</item>
+    </string-array>
+    <string name="estimate_not_available">Could not calculate an estimate</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_description">[No description available]</string>
+
+    <!-- Map -->
+    <string name="outside_map">You are outside the map</string>
+    <string name="click_map_marker">Click map marker for options</string>
+    <string name="floor_n1">-1<sup><small>st</small></sup> floor</string>
+    <string name="floor_0">1<sup><small>st</small></sup> floor</string>
+    <string name="floor_1">2<sup><small>nd</small></sup> floor</string>
+    <string name="floor_2">3<sup><small>rd</small></sup> floor</string>
+    <string name="floor_3">4<sup><small>th</small></sup> floor</string>
+    <string name="floor_4">5<sup><small>th</small></sup> floor</string>
+    <string name="floor_5">6<sup><small>th</small></sup> floor</string>
+    <string name="floor_6">7<sup><small>th</small></sup> floor</string>
+    <string name="floor_7">8<sup><small>th</small></sup> floor</string>
+    <string name="floor_8">9<sup><small>th</small></sup> floor</string>
+    <string name="floor_9">10<sup><small>th</small></sup> floor</string>
+    <string name="floor_10">11<sup><small>th</small></sup> floor</string>
+    <string name="floor_11">12<sup><small>th</small></sup> floor</string>
+    <string name="floor_12">13<sup><small>th</small></sup> floor</string>
+    <string name="floor_13">14<sup><small>th</small></sup> floor</string>
+
+    <!-- Preferences -->
+    <string name="preference_route">Route options</string>
+    <string name="preference_route_accessible">Use accessible routes only</string>
+    <string name="preference_route_stairs">I can use stairs</string>
+    <string name="preference_route_elevator">I can use elevators</string>
+    <string name="preference_guidance">Guidance options</string>
+    <string name="preference_guidance_voice">Use voice guidance</string>
+    <string name="preference_vibration">Vibration</string>
+    <string name="preference_vibration_enabled">Use vibration</string>
+    <string name="preference_privacy_policy">Privacy policy</string>
+    <string name="preference_about">About</string>
+
+    <!-- Preview -->
+    <string name="calculating_route">Calculating…</string>
+    <plurals name="minutes">
+        <item quantity="one">%d min</item>
+        <item quantity="other">%d mins</item>
+    </plurals>
+    <plurals name="meters">
+        <item quantity="one">%d meter</item>
+        <item quantity="other">%d meters</item>
+    </plurals>
+    <string name="preview_estimate">%s (%s)</string>
+    <string name="preview_parking_button">Nearest parking on route</string>
+    <string name="preview_parking_remove_button">Remove parking</string>
+    <string name="preview_show_steps">Show route</string>
+    <string name="preview_hide_steps">Hide route</string>
+    <string name="waypoint">Waypoint</string>
+    <string name="route_preview_turn_start">Start Navigation</string>
+    <string name="route_preview_turn_left_hard">Turn hard left</string>
+    <string name="route_preview_turn_left">Turn left</string>
+    <string name="route_preview_turn_left_slight">Turn slight left</string>
+    <string name="route_preview_turn_straight">Continue straight</string>
+    <string name="route_preview_turn_right_slight">Turn slight right</string>
+    <string name="route_preview_turn_right">Turn right</string>
+    <string name="route_preview_turn_right_hard">Turn right</string>
+    <string name="route_preview_turn_around">Turn around</string>
+    <string name="route_preview_up_elevator">Use the elevator up</string>
+    <string name="route_preview_up_escalator">Use the escalator up</string>
+    <string name="route_preview_up_stairs">Use the stairs up</string>
+    <string name="route_preview_down_elevator">Use the elevator down</string>
+    <string name="route_preview_down_escalator">Use the escalator down</string>
+    <string name="route_preview_down_stairs">Use the stairs down</string>
+    <string name="route_preview_finish">Arrive at destination</string>
+    <string name="route_preview_read_more">Read more</string>
+    <string name="route_preview_show_less">Show less</string>
+
+
+    <!-- Navigation -->
+    <string name="light_along_path">Lights along the path are coloured blue</string>
+    <string name="calculating_steps">Calculating steps…</string>
+    <plurals name="navigation_distance">
+        <item quantity="one">%d meter</item>
+        <item quantity="other">%d meters</item>
+    </plurals>
+
+    <!-- Privacy policy notification -->
+    <string name="privacy_policy_required">Please accept our privacy policy to continue</string>
+    <string name="next">Next</string>
+
+    <!-- Privacy policy -->
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="accept_privacy_policy">Accept &amp; continue</string>
+    <string name="decline_privacy_policy">Close</string>
+    <string name="privacy_policy_html">
+        <![CDATA[
+            <h2>Proximi.io Privacy</h2>
+        ]]>
+    </string>
+    <string name="privacy_policy_visitor_id">Visitor ID: %s</string>
+
+    <!-- Navigation Notification -->
+    <string name="notification_navigation_channel_name">Navigation notification channel</string>
+    <string name="notification_navigation_channel_description">Navigation description</string>
+    <string name="notification_stop">Stop</string>
+
+    <!-- POI Detail -->
+    <string name="fragment_poi_detail_directions_button">Show me directions</string>
+    <string name="fragment_poi_detail_faster_route">Faster route</string>
+    <string name="fragment_poi_detail_my_trip">Start My Trip</string>
+    <string name="fragment_poi_detail_trip">Trip</string>
+    <string name="fragment_poi_detail_location_description">Location description</string>
+    <string name="fragment_poi_detail_calculating_steps">calculating steps…</string>
+    <string name="fragment_poi_detail_calculating_steps_error">unable to estimate route</string>
+    <string name="fragment_poi_detail_link">External links</string>
+    <string name="fragment_poi_detail_no_images">No images available</string>
+
+</resources>
